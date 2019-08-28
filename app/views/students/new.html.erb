@@ -1,0 +1,15 @@
+<h3>Student Form</h3>
+
+<%= form_tag '/students' do %>
+  <label>Student</label><br>
+  First Name: <%= text_field_tag :"student[first_name]" %>
+  Last Name: <%= text_field_tag :"student[last_name]" %>
+  <%= submit_tag "Submit Student" %>
+
+<% end%>
+
+
+
+
+
+
