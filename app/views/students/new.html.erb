@@ -1,0 +1,13 @@
+<h1>Student Form</h1>
+
+<%=  form_tag '/students' do  %>
+  <h3>Student's First Name:  <%= text_field_tag 'student[last_name]'%></h3>
+  <h3>Student's Last Name:  <%= text_field_tag 'student[first_name]'%></h3>
+  <h3>Student Comments:  <%= text_area_tag 'student[comment]'%>
+  <%= button_tag 'Submit Student'%>
+<% end %>
+
+<%if @params %>
+<br>
+<%= @params %>
+<%end%>
